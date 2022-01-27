@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="terminal-css">
+        <pre class="css"><span class="t_p">*{</span>
+        <span class="t_p">margin: 0;</span>
+        <span class="t_p">padding: 0;</span>
+    <span class="t_p">}</span>
+    </pre>
+    </div>
+    <br>
+    <br>
+    <div class="terminal-css">
+        <pre><span class="t_p">div.font{ 
+        height: 25vh; 
+        width: 100%; 
+        background-color: #182EA2; 
+        margin: 10px;
+    }
+    </pre>
+    </div>
+    <br>
+    <br>
+    <div class="terminal-html">
+    <pre><span class="commentaire">&lt;!-- the actual device --&gt;</span>
+    <span class="balise">&lt;div</span> <span class="spé">id=</span><span class="arg">"monitor"</span><span class="balise">&gt;</span>
+        <span class="commentaire">&lt;!-- the rounded edge near the glass --&gt;</span>
+        <span class="balise">&lt;div</span> <span class="spé">id=</span><span class="arg">"bezel"</span><span class="balise">&gt;</span>
+            <span class="commentaire">&lt;!-- the overlay and horizontal pattern --&gt;</span>
+            <span class="balise">&lt;div</span> <span class="spé">id=</span><span class="arg">"crt"</span> <span class="spé">class=</span><span class="arg">"off"</span> <span class="t_p">onClick=</span><span class="t_p">"handleClick(event)"</span><span class="balise">&gt;</span> 
+                <span class="commentaire">&lt;!-- slowly moving scanline --&gt;</span>
+                <span class="balise">&lt;div</span> <span class="spé">class=</span><span class="arg">"scanline"</span><span class="balise">&gt;&lt;/div&gt;</span>
+                <span class="commentaire">&lt;!-- the input and output --&gt;</span>
+                <span class="balise">&lt;div</span> <span class="spé">class=</span><span class="arg">"terminal"</span><span class="balise">&gt;&lt;/div&gt;</span>
+            <span class="balise">&lt;/div&gt;</span>
+        <span class="balise">&lt;/div&gt;</span>
+    <span class="balise">&lt;/div&gt;</span>
+    </pre>
+</body>
+</html>
+<style>
+/*termial css*/
+div.terminal-css{
+    border: solid 1px black;
+    background-color: black;
+    width: 40%;
+    font-size: 14px;
+    border-radius: 5px;
+}
+span.t_p{
+    color: rgba(255, 255, 0, 0.918);
+}
+
+/*terminal html*/
+div.terminal-html{
+    border: solid 1px black;
+    background-color: rgba(0, 0, 0, 0.911);
+    width: 40%;
+    font-size: 14px;
+    border-radius: 5px;
+}
+span.commentaire{
+    color: gray;
+}
+span.balise{
+    color: rgba(85, 85, 241, 0.911);
+}
+span.spé{
+    color: aqua
+}
+span.arg{
+    color: rgb(241, 129, 48);
+}
+</style>
